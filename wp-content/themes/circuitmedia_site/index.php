@@ -11,6 +11,8 @@
  * @package circuitmedia-site
  */
 
+test
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
