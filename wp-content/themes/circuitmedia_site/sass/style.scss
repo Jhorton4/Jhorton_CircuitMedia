@@ -50,6 +50,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "normalize";
 
+@improt "grid/layout"
+
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
@@ -104,3 +106,5 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 12.0 Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+@import "layout/header";

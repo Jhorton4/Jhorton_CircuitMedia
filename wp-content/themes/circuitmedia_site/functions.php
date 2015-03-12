@@ -115,7 +115,6 @@ function circuitmedia_site_scripts() {
 
 	wp_enqueue_style( 'circuitmedia_open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' );
 
-
 	wp_enqueue_script( 'circuitmedia_site-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'circuitmedia_site-main', get_template_directory_uri() . '/js/main.js', array(), '20120206', true );
