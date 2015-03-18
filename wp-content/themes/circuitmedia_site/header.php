@@ -23,15 +23,15 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="row">
-		<div class="site-branding">
-		 <img src="<?php bloginfo('template_directory'); ?>/images/circuitmedia.png" alt="" />
+			<div class="site-branding">
+			 <img src="<?php bloginfo('template_directory'); ?>/images/circuitmedia.png" alt="" />
 
-		</div><!-- .site-branding -->
+			</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'circuitmedia_site' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'circuitmedia_site' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
 
