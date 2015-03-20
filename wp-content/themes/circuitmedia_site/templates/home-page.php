@@ -40,8 +40,7 @@ get_header(); ?>
 
 
 <!-- third column -->
-
-		<div class="driver-column">
+    <div class="driver-column">
    			<img src="<?php the_field('driver_icon_3'); ?>">
    			<h2><?php the_field('driver_title_3'); ?></h2>
    			<p>><?php the_field('driver_description_3'); ?></p>
@@ -50,6 +49,34 @@ get_header(); ?>
 <!-- end of third column -->
 
 	</div>
+</div>
+
+<div class="row">
+
+<?php
+    // The Arguments
+    $args = array(
+        'post_type' => 'portfolio',  // Name of Your Custom Post Type
+        'posts_per_page' => 3       // Number of Posts to Retrieve
+    );
+    // Start Loop
+    $loop = new WP_Query( $args );
+    while ( $loop->have_posts() ) : $loop->the_post();
+?>
+
+<!-- // This Repeats 3 Times-->
+
+<div class="column third">
+    <a class="feature-image-overlay" href="<?php the_permalink(); ?>"><img src="<?php the_field('portfolio_feature_image'); ?>" /></a>
+    <a href="<?php the_permalink(); ?>"<h3><?php the_title(); ?></h3></a>
+    <p><?php the_field('portfolio_short_description'); ?></p>
+ </div>
+
+<?php
+    // Resets the Loop
+    endwhile;
+    wp_reset_postdata();
+?>
 </div>
 
 <?php get_footer(); ?>

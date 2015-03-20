@@ -14,6 +14,30 @@ object {
 	max-width: 100%;
 }
 
+.feature-image-overlay {
+	display: block;
+	@include clearfix;
+	@include ease;
+
+	img {
+	  	float: left;
+	  	width: 100%;
+	  	position: relative;
+	  	z-index: -1;
+	  	filter: grayscale(75%);
+	  	@include ease;
+	}
+
+	&:hover {
+	  	background: rgba($blue, 0.45);
+
+		img {
+	
+		}	
+
+ 	}
+}
+
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/

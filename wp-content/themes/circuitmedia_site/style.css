@@ -223,7 +223,27 @@ th {
 .row {
   width: 85%;
   max-with: 1100px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  content: "";
+  display: table; }
+
+.column {
+  float: left;
+  margin-right: 2%; }
+  .column.half {
+    width: 49%; }
+  .column.third {
+    width: 32%; }
+  .column.fourth {
+    width: 23.5%; }
+  .column.fifth {
+    width: 18.4%; }
+  .column:last-of-type {
+    margin-right: 0; }
+  @media (max-width: 600px) {
+    .column {
+      width: 100% !important;
+      margin-right: 0; } }
 
 /*--------------------------------------------------------------
 2.0 Typography
@@ -240,7 +260,10 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  color: #14133f; }
+  h1 a, a h1, h2 a, a h2, h3 a, a h3, h4 a, a h4, h5 a, a h5, h6 a, a h6 {
+    color: #14133f; }
 
 p {
   margin-bottom: 1.5em; }
@@ -412,7 +435,8 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: royalblue;
+  text-decoration: none; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -450,7 +474,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    margin-top: 0.4em; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -647,6 +672,24 @@ iframe,
 object {
   max-width: 100%; }
 
+.feature-image-overlay {
+  display: block;
+  content: "";
+  display: table;
+  -webkit-transition: all 333ms ease-in-out 0;
+          transition: all 333ms ease-in-out 0; }
+  .feature-image-overlay img {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    -webkit-filter: grayscale(75%);
+            filter: grayscale(75%);
+    -webkit-transition: all 333ms ease-in-out 0;
+            transition: all 333ms ease-in-out 0; }
+  .feature-image-overlay:hover {
+    background: rgba(20, 19, 63, 0.45); }
+
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
@@ -695,12 +738,12 @@ object {
   display: block; }
 
 .site-header {
-  background: #37CEF7; }
+  background: #14133f; }
 
 .site-branding img {
   float: left;
-  width: 350px;
-  padding: 10px; }
+  width: 23em;
+  padding: .5em; }
 
 .hero {
   text-align: center;
@@ -725,7 +768,8 @@ object {
     margin-top: 0; }
 
 .drivers {
-  background: #F7F7F7; }
+  background: #F7F7F7;
+  margin-bottom: 2em; }
   .drivers .driver-column {
     float: left;
     width: 33%;
@@ -741,6 +785,6 @@ object {
         height: 3px;
         left: 30%;
         right: 30%;
-        background: #37C3F7; }
+        background: #14133f; }
 
 /*# sourceMappingURL=style.css.map */

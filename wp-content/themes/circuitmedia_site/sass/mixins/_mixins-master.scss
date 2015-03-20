@@ -39,3 +39,27 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+// Ease
+@mixin ease($time:333ms, $el: all, $anim: ease-in-out, $del: 0) {
+    transition: $el $time $anim $del;
+}
+
+$breakpoints: (
+  'phone':   ( max-width:  600px ),
+  'tablet':  ( max-width:  900px ),
+  'laptop': ( max-width:  1024px ),
+  'large':  ( min-width: 1500px )
+);
+
+// Responsive
+@mixin breakpoint($name) {
+      @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}
