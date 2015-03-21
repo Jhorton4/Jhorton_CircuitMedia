@@ -13,10 +13,22 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php dynamic_sidebar( 'footer-widgets' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'circuitmedia_site' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'circuitmedia_site' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'circuitmedia_site' ), 'circuitmedia-site', '<a href="http://joe.circuitmedia@gmail.com" rel="designer">Joseph Horton</a>' ); ?>
+			<a href="<?php echo esc_url( __( 'mailto:info@circuitmedia.com', 'circuitmedia_site' ) ); ?>"><?php printf( __( 'Say Hi'), 'WordPress' ); ?></a>
+			<span class="sep"></span>
+			
 		</div><!-- .site-info -->
+	
+	<nav id="site-navigation" class="footer-navigation" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+			</nav>
+
+	<nav id="site-navigation" class="social-navigation" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+			</nav>
+
+
+
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

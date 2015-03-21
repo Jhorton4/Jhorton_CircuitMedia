@@ -52,6 +52,8 @@ function circuitmedia_site_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'circuitmedia_site' ),
 		'footer' => __( 'footer Menu', 'circuitmedia_site' ),
+		'social' => __( 'Social Menu', 'circuitmedia_site' ),   // If you want to use a social menu
+
 
 	) );
 
