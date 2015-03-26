@@ -451,36 +451,66 @@ a {
 --------------------------------------------------------------*/
 .main-navigation {
   float: right;
-  margin-top: 0.5em; }
+  margin-top: 1em; }
   .main-navigation ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul {
-      left: auto; }
-  .main-navigation li {
+    text-align: left;
     float: left;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0; }
+  .main-navigation ul li {
+    display: inline-block;
     position: relative;
-    margin-top: 0.4em; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none;
+    right: 0;
+    left: 0;
+    padding: 24px 17px;
+    cursor: pointer;
+    font: 12px/18px sans-serif;
     color: white;
-    margin-left: 1em; }
+    text-decoration: none;
+    letter-spacing: .75px;
+    font-weight: 400; }
+  .main-navigation nav a {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    left: 0;
+    padding: 24px 17px;
+    cursor: pointer;
+    font: 12px/18px sans-serif;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .75px;
+    font-weight: 400; }
+  .main-navigation nav a:hover {
+    background: #D1D1D1;
+    color: #14133F; }
+  .main-navigation ul li:hover {
+    background: #D1D1D1;
+    color: #14133F; }
+  .main-navigation ul li a {
+    font: 12px/18px sans-serif;
+    color: white;
+    text-decoration: none; }
+  .main-navigation ul li a:hover {
+    background: #D1D1D1;
+    color: #14133F; }
+  .main-navigation ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 150px;
+    visibility: hidden;
+    font-weight: 400; }
+  .main-navigation ul li ul a {
+    background: #D1D1D1;
+    display: block; }
+  .main-navigation ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible; }
 
 /* Small menu. */
 .menu-toggle {
@@ -743,7 +773,7 @@ object {
 .site-branding img {
   float: left;
   width: 23em;
-  padding: .5em; }
+  padding: 1.2em; }
 
 .hero {
   text-align: center;
@@ -768,7 +798,7 @@ object {
     margin-top: 0; }
 
 .drivers {
-  background: #F7F7F7;
+  background: #D1D1D1;
   margin-bottom: 2em; }
   .drivers .driver-column {
     float: left;
@@ -786,5 +816,38 @@ object {
         left: 30%;
         right: 30%;
         background: #14133f; }
+
+.site-footer {
+  background: #14133f;
+  position: relative; }
+
+.bottom-logo img {
+  float: left;
+  margin-top: 1.3em;
+  width: 32em; }
+
+.say-hi {
+  float: left;
+  margin-left: 17.7em;
+  margin-top: 1.4em; }
+
+.footer-navigation {
+  width: 34em; }
+
+.social-navigation li {
+  float: right;
+  display: inline-block;
+  margin-left: 1em;
+  margin-bottom: 1.4em; }
+
+.copyright {
+  background: black;
+  padding: .4em 0;
+  margin: 0;
+  text-align: center;
+  font-size: .7em;
+  color: #D1D1D1;
+  letter-spacing: .03em;
+  font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */

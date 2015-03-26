@@ -7,32 +7,53 @@
  * @package circuitmedia-site
  */
 ?>
+<footer>
 
-	</div><!-- #content -->
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<?php dynamic_sidebar( 'footer-widgets' ); ?>
+
+<?php wp_footer(); ?>
+</footer>
+
+<body <?php body_class(); ?>>
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'circuitmedia_site' ); ?></a>
+
+<div><!-- #content -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+
+	<div class="row">
+
+	  	<div class="bottom-logo">
+		 	<img src="<?php bloginfo('template_directory'); ?>/images/circuitmedia2.png" alt="" />
+	  	</div>
+
+	  	<div class="say-hi">
 			<a href="<?php echo esc_url( __( 'mailto:info@circuitmedia.com', 'circuitmedia_site' ) ); ?>"><?php printf( __( 'Say Hi'), 'WordPress' ); ?></a>
-			<span class="sep"></span>
-			
-		</div><!-- .site-info -->
-	
-	<nav id="site-navigation" class="footer-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-			</nav>
+		</div>
 
-	<nav id="site-navigation" class="social-navigation" role="navigation">
+
+		<div class="social-navigation">
+			<nav id="site-navigation" class="social-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
 			</nav>
 
+		</div>
+
+	</div>
+
+		<p class="copyright">© Circuit Media  <?php echo date("Y"); ?></p>
 
 
+</footer>
 
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
-<?php wp_footer(); ?>
+	<div id="content" class="site-content">
+
 
 </body>
 </html>
