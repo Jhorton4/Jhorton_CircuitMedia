@@ -227,6 +227,14 @@ th {
   content: "";
   display: table; }
 
+.gallery {
+  width: 100%;
+  content: "";
+  display: table; }
+  .gallery .column {
+    margin: 0 !important;
+    width: 25%; }
+
 .column {
   float: left;
   margin-right: 2%; }
@@ -704,19 +712,19 @@ object {
 
 .feature-image-overlay {
   display: block;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
   content: "";
   display: table;
   -webkit-transition: all 333ms ease-in-out 0;
           transition: all 333ms ease-in-out 0; }
-  .feature-image-overlay img {
-    float: left;
-    width: 100%;
-    position: relative;
-    z-index: -1;
-    -webkit-filter: grayscale(75%);
-            filter: grayscale(75%);
-    -webkit-transition: all 333ms ease-in-out 0;
-            transition: all 333ms ease-in-out 0; }
+  html.touch .feature-image-overlay {
+    background-attachment: scroll !important; }
   .feature-image-overlay:hover {
     background: rgba(20, 19, 63, 0.45); }
 
@@ -790,8 +798,6 @@ object {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
-  .hero h1, .hero p {
-    color: white; }
   .hero h1 {
     margin-bottom: 0; }
   .hero p {

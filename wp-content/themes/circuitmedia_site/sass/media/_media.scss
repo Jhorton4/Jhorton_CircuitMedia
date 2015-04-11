@@ -16,17 +16,21 @@ object {
 
 .feature-image-overlay {
 	display: block;
+	height: 200px;
+	width: 100%;
+	text-align: center;
+	@include background-image(scroll);
 	@include clearfix;
 	@include ease;
 
-	img {
-	  	float: left;
-	  	width: 100%;
-	  	position: relative;
-	  	z-index: -1;
-	  	filter: grayscale(75%);
-	  	@include ease;
-	}
+	// img {
+	//   	float: left;
+	//   	width: 100%;
+	//   	position: relative;
+	//   	z-index: -1;
+	//   	filter: grayscale(75%);
+	//   	@include ease;
+	// }
 
 	&:hover {
 	  	background: rgba($blue, 0.45);

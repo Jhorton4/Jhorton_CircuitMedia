@@ -7,6 +7,16 @@ $grid-gutter: 2%;
 	@include clearfix;
 }
 
+.gallery {
+	width: 100%;
+	@include clearfix;
+
+	.column {
+		margin: 0 !important;
+		width: 25%;
+	}
+}
+
 .column {
 	float: left;
 	margin-right: $grid-gutter;
