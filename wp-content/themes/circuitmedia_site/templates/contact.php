@@ -5,9 +5,15 @@
 
 get_header(); ?>
 
+<div class="hero" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
+    <div class="content-wrap row">
+        <h3><?php the_field('contact_headline'); ?></h3>
+        <hr/>
+    </div>
+</div>
+
   <div class="row top clearfix">
       <div class="column contact">
-        <h4>CONTACT</h4>
         </div>
         <!-- Google Map Embed -->
       <div class="map">

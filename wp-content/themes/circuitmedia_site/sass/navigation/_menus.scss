@@ -1,6 +1,5 @@
 .main-navigation {
 	float: right;
-	margin-top: 1em;
 
 	ul {
 		text-align: left;
@@ -18,11 +17,11 @@ ul li {
   left: 0;
   padding: 24px 17px;
   cursor: pointer;
-  font: 12px/18px sans-serif;
+  font: 16px/25px sans-serif;
   color: white;
   text-decoration: none;
   letter-spacing: .75px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 nav a {
@@ -32,14 +31,21 @@ nav a {
   left: 0;
   padding: 24px 17px;
   cursor: pointer;
-  font: 12px/18px sans-serif;
+  font: 16px/18px sans-serif;
   color: white;
   text-decoration: none;
   letter-spacing: .75px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
+
 nav a:hover {
+  background: #D1D1D1;
+  color: #14133F;
+}
+
+
+nav ul li a:hover {
   background: #D1D1D1;
   color: #14133F;
 }
@@ -49,8 +55,19 @@ ul li:hover {
   color: #14133F;
 }
 
+ul li:hover ul {
+  display: block;
+  background: #D1D1D1;
+  color: #14133F;
+}
+
+ul li:hover li {
+  display: block;
+  background: #D1D1D1;
+  color: #14133F;
+}
+
 ul li a {
-  font: 12px/18px sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -67,7 +84,7 @@ ul li ul {
   left: 0;
   width: 150px;
   visibility: hidden;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 ul li ul a { 

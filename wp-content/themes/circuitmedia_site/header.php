@@ -16,6 +16,7 @@
 
 <?php wp_head(); ?>
 </head>
+<div>
 
 <body <?php body_class(); ?>>
 

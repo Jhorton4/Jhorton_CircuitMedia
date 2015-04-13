@@ -18,7 +18,7 @@ get_header(); ?>
 <?php
     // The Arguments
     $args = array(
-        'post_type' => 'work',  // Name of Your Custom Post Type
+        'post_type' => 'works',  // Name of Your Custom Post Type
         'posts_per_page' => 9       // Number of Posts to Retrieve
     );
     // Start Loop

@@ -443,12 +443,12 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: white;
   text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #2C5DAA; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #D1D1D1; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -458,8 +458,7 @@ a {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  float: right;
-  margin-top: 1em; }
+  float: right; }
   .main-navigation ul {
     text-align: left;
     float: left;
@@ -474,11 +473,11 @@ a {
     left: 0;
     padding: 24px 17px;
     cursor: pointer;
-    font: 12px/18px sans-serif;
+    font: 16px/25px sans-serif;
     color: white;
     text-decoration: none;
     letter-spacing: .75px;
-    font-weight: 400; }
+    font-weight: 300; }
   .main-navigation nav a {
     display: inline-block;
     position: relative;
@@ -486,19 +485,29 @@ a {
     left: 0;
     padding: 24px 17px;
     cursor: pointer;
-    font: 12px/18px sans-serif;
+    font: 16px/18px sans-serif;
     color: white;
     text-decoration: none;
     letter-spacing: .75px;
-    font-weight: 400; }
+    font-weight: 300; }
   .main-navigation nav a:hover {
+    background: #D1D1D1;
+    color: #14133F; }
+  .main-navigation nav ul li a:hover {
     background: #D1D1D1;
     color: #14133F; }
   .main-navigation ul li:hover {
     background: #D1D1D1;
     color: #14133F; }
+  .main-navigation ul li:hover ul {
+    display: block;
+    background: #D1D1D1;
+    color: #14133F; }
+  .main-navigation ul li:hover li {
+    display: block;
+    background: #D1D1D1;
+    color: #14133F; }
   .main-navigation ul li a {
-    font: 12px/18px sans-serif;
     color: white;
     text-decoration: none; }
   .main-navigation ul li a:hover {
@@ -511,7 +520,7 @@ a {
     left: 0;
     width: 150px;
     visibility: hidden;
-    font-weight: 400; }
+    font-weight: 300; }
   .main-navigation ul li ul a {
     background: #D1D1D1;
     display: block; }
@@ -781,7 +790,8 @@ object {
 .site-branding img {
   float: left;
   width: 23em;
-  padding: 1.2em; }
+  padding: 1.2em;
+  margin-top: -.15em; }
 
 .hero {
   text-align: center;
@@ -834,8 +844,9 @@ object {
 
 .say-hi {
   float: left;
-  margin-left: 17.7em;
-  margin-top: 1.4em; }
+  margin-left: 21.7em;
+  margin-top: 1.4em;
+  color: white; }
 
 .footer-navigation {
   width: 34em; }
