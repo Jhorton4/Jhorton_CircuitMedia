@@ -28,7 +28,7 @@ get_header(); ?>
 
 
 <div class="column">
-    <div class="feature-image-overlay" style= "background-image: url('<?php the_field('work_feature_image'); ?>');" >
+    <div class="feature-image-overlay" style= "background-image: url('<?php the_field('piece_feature_image'); ?>');" >
       <h3><?php the_title(); ?></h3>
     </div>
  </div>

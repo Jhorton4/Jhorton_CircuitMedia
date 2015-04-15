@@ -15,13 +15,6 @@ ul li {
   position: relative;
   right: 0;
   left: 0;
-  padding: 24px 17px;
-  cursor: pointer;
-  font: 16px/25px sans-serif;
-  color: white;
-  text-decoration: none;
-  letter-spacing: .75px;
-  font-weight: 300;
 }
 
 nav a {
@@ -68,8 +61,17 @@ ul li:hover li {
 }
 
 ul li a {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  left: 0;
+  padding: 27px 17px;
+  cursor: pointer;
+  font: 16px/18px sans-serif;
   color: white;
   text-decoration: none;
+  letter-spacing: .75px;
+  font-weight: 300;
 }
 
 ul li a:hover {
@@ -80,9 +82,9 @@ ul li a:hover {
 ul li ul {
   padding: 0;
   position: absolute;
-  top: 66px;
+  top: 72px;
   left: 0;
-  width: 150px;
+  width: 122px;
   visibility: hidden;
   font-weight: 300;
 }

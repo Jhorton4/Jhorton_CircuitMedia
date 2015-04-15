@@ -21,6 +21,11 @@ get_header(); ?>
       </div>
   </div>
 
+  <div class="row">
+      <p><?php the_field('contact_info'); ?></p>
+    </div>
+ </div>
+
 
 <?php get_footer(); ?>
 

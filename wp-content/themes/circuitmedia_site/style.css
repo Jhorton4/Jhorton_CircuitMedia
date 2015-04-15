@@ -470,14 +470,7 @@ a {
     display: inline-block;
     position: relative;
     right: 0;
-    left: 0;
-    padding: 24px 17px;
-    cursor: pointer;
-    font: 16px/25px sans-serif;
-    color: white;
-    text-decoration: none;
-    letter-spacing: .75px;
-    font-weight: 300; }
+    left: 0; }
   .main-navigation nav a {
     display: inline-block;
     position: relative;
@@ -508,17 +501,26 @@ a {
     background: #D1D1D1;
     color: #14133F; }
   .main-navigation ul li a {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    left: 0;
+    padding: 27px 17px;
+    cursor: pointer;
+    font: 16px/18px sans-serif;
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    letter-spacing: .75px;
+    font-weight: 300; }
   .main-navigation ul li a:hover {
     background: #D1D1D1;
     color: #14133F; }
   .main-navigation ul li ul {
     padding: 0;
     position: absolute;
-    top: 66px;
+    top: 72px;
     left: 0;
-    width: 150px;
+    width: 122px;
     visibility: hidden;
     font-weight: 300; }
   .main-navigation ul li ul a {
@@ -866,5 +868,7 @@ object {
   color: #D1D1D1;
   letter-spacing: .03em;
   font-weight: 300; }
+
+@imoort "layout/contact";
 
 /*# sourceMappingURL=style.css.map */
