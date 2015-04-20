@@ -23,7 +23,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="row">
 			<div class="site-branding">
-			 <img src="<?php bloginfo('template_directory'); ?>/images/circuitmedia.png" alt="" />
+			<a href="<?php echo get_option('home'); ?>"/><img src="<?php bloginfo('template_directory'); ?>/images/circuitmedia.png" alt="" /></a>
 
 			</div><!-- .site-branding -->
 

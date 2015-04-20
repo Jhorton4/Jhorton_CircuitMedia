@@ -5,8 +5,8 @@
 
 get_header(); ?>
 
-<div class="hero" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
-    <div class="content-wrap row">
+<div class="title">
+    <div class="description row">
         <h3><?php the_field('services_headline'); ?></h3>
         <hr/>
     </div>

@@ -5,14 +5,14 @@
 
 get_header(); ?>
 
-<div class="hero" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
-    <div class="content-wrap row">
+<div class="title">
+    <div class="description row">
         <h3><?php the_field('products_headline'); ?></h3>
         <hr/>
     </div>
 </div>
 
-<div class="gallery">
+<div class="row clearfix">
 
 <?php
     // The Arguments
@@ -26,12 +26,14 @@ get_header(); ?>
 ?>
 
 
-<div class="column">
-    <div class="feature-image-overlay" style= "background-image: url('<?php the_field('product_feature_image'); ?>');" >
-      <h3><?php the_title(); ?></h3>
+<div class="products">
+    <div class="feature-image-overlay" style= "background-image: url('<?php the_field('product_feature_image'); ?>');" ></div>
+</div>      
+
+    <div class="product-description">
+      <h2><?php the_title(); ?></h2>
       <p><?php the_field('product_description'); ?></p>
     </div>
- </div>
 
 <?php
     // Resets the Loop
@@ -40,6 +42,9 @@ get_header(); ?>
 ?>
  </div>
 <?php get_footer(); ?>
+
+
+
 
 
 

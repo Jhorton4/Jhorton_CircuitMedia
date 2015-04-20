@@ -1,4 +1,11 @@
 .map {
-	align: center;
 	height: 20%;
+	margin: 0 auto;
+	display: table;
+}
+
+.contact-info {
+	p {	text-align: center;
+		margin-bottom: 3em;
+	}
 }

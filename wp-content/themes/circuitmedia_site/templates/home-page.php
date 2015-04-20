@@ -5,79 +5,32 @@
 
 get_header(); ?>
 
-<div class="hero" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
+<div class="hero" style="background-image: url(<?php the_field('hero_background_image_1'); ?>);">
   	<div class="content-wrap row">
-  		<h1><?php the_field('hero_headline'); ?></h1>
-  		<p><?php the_field('hero_subhead'); ?></p>
-  		<a class="button" href="<?php the_field('hero_button_link'); ?>"><?php the_field ('hero_button_label'); ?></a>
+  		<h1><?php the_field('hero_headline_1'); ?></h1>
 	</div>
 </div>
 
-<div class="drivers">
- 	<div class="row">
-
- <!-- first column -->
-		<div class="driver-column">
-   			<img src="<?php the_field('driver_icon_1'); ?>">
-   			<h2><?php the_field('driver_title_1'); ?></h2>
-   			<p>><?php the_field('driver_description_1'); ?></p>
-		</div>
-
-<!-- end of first column -->
+<div class="row clearfix">
 
 
+  <div class="middle" style="background-image: url(<?php the_field('hero_middle_image'); ?>);"></div>
+      
+      <div class="short-description">
+          <h2>CIRCUIT MEDIA</h2>
+          <hr>
+          <p><?php the_field('hero_short_description'); ?></p>
+      </div>  
 
-<!-- second column -->
-
-		<div class="driver-column">
-   			<img src="<?php the_field('driver_icon_2'); ?>">
-   			<h2><?php the_field('driver_title_2'); ?></h2>
-   			<p>><?php the_field('driver_description_2'); ?></p>
-		</div>
-
-<!-- end of second column -->
-
-
-
-<!-- third column -->
-    <div class="driver-column">
-   			<img src="<?php the_field('driver_icon_3'); ?>">
-   			<h2><?php the_field('driver_title_3'); ?></h2>
-   			<p>><?php the_field('driver_description_3'); ?></p>
-		</div>
-
-<!-- end of third column -->
-
-	</div>
 </div>
 
-<div class="row">
-
-<?php
-    // The Arguments
-    $args = array(
-        'post_type' => 'portfolio',  // Name of Your Custom Post Type
-        'posts_per_page' => 3       // Number of Posts to Retrieve
-    );
-    // Start Loop
-    $loop = new WP_Query( $args );
-    while ( $loop->have_posts() ) : $loop->the_post();
-?>
-
-<!-- // This Repeats 3 Times-->
-
-<div class="column third">
-    <a class="feature-image-overlay" href="<?php the_permalink(); ?>"><img src="<?php the_field('portfolio_feature_image'); ?>" /></a>
-    <a href="<?php the_permalink(); ?>"<h3><?php the_title(); ?></h3></a>
-    <p><?php the_field('portfolio_short_description'); ?></p>
- </div>
-
-<?php
-    // Resets the Loop
-    endwhile;
-    wp_reset_postdata();
-?>
+<div class="hero-bottom" style="background-image: url(<?php the_field('hero_background_image_2'); ?>);">
+    <div class="content-wrap row">
+      <h1><?php the_field('hero_headline_2'); ?></h1>
+  </div>
 </div>
+
+
 
 <?php get_footer(); ?>
 

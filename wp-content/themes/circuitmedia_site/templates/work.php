@@ -5,8 +5,8 @@
 
 get_header(); ?>
 
-<div class="hero" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
-    <div class="content-wrap row">
+<div class="title">
+    <div class="description row">
         <h3><?php the_field('work_headline'); ?></h3>
         <hr/>
     </div>
@@ -41,6 +41,14 @@ get_header(); ?>
 </div>
 
 <?php get_footer(); ?>
+
+
+
+<div class="column third">
+    <a class="feature-image-overlay" href="<?php the_permalink(); ?>"><img src="<?php the_field('portfolio_feature_image'); ?>" /></a>
+    <a href="<?php the_permalink(); ?>"<h3><?php the_title(); ?></h3></a>
+    <p><?php the_field('portfolio_short_description'); ?></p>
+ </div>
 
 
 
