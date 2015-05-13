@@ -16,7 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'circuitmedia');
+define('DB_NAME', 'Jhorton_CircuitMedia');
 
 /** MySQL database username */
 define('DB_USER', 'root');
