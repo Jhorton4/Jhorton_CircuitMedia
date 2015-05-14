@@ -34,7 +34,7 @@ get_header(); ?>
             <div class="more-info">
               <h2><?php the_title(); ?></h2>
                <p><?php the_field('person_title'); ?></p>
-                </hr>
+                <hr>
                 <a href= "mailto:<?php the_field('person_email_link'); ?>"><span class="genericon genericon-mail"></span></span></a>
                 <a href="<?php the_field('person_linkedin_link'); ?>"><span class="genericon genericon-linkedin-alt"></span></a>
             </div>

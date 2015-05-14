@@ -447,8 +447,6 @@ textarea {
 a {
   color: white;
   text-decoration: none; }
-  a:visited {
-    color: #2C5DAA; }
   a:hover, a:focus, a:active {
     color: #D1D1D1; }
   a:focus {
@@ -496,7 +494,7 @@ a {
     color: #14133F; }
   .main-navigation ul li:hover ul {
     display: block;
-    background: #D1D1D1;
+    background: #blue;
     color: #14133F; }
   .main-navigation ul li:hover li {
     display: block;
@@ -511,12 +509,11 @@ a {
     cursor: pointer;
     font: 16px/18px sans-serif;
     color: white;
-    text-decoration: none;
     letter-spacing: .75px;
     font-weight: 300; }
   .main-navigation ul li a:hover {
-    background: #D1D1D1;
-    color: #14133F; }
+    background: #2C5DAA;
+    color: white; }
   .main-navigation ul li ul {
     padding: 0;
     position: absolute;
@@ -527,6 +524,7 @@ a {
     font-weight: 300; }
   .main-navigation ul li ul a {
     background: #D1D1D1;
+    color: #blue;
     display: block; }
   .main-navigation ul li:hover ul {
     display: block;
@@ -913,7 +911,11 @@ object {
 
 .contact-info p {
   text-align: center;
-  margin-bottom: 3em; }
+  margin-bottom: 2.5em;
+  font-weight: 500;
+  font-size: 1.125em;
+  letter-spacing: .01em;
+  color: #14133f; }
 
 .title {
   width: 85%;
@@ -938,7 +940,6 @@ h3 {
   width: 100%; }
 
 .more-info {
-  padding-top: 9.2em;
   background: red;
   display: none;
   width: 100%;
@@ -947,12 +948,16 @@ h3 {
     color: white;
     z-index: 98;
     font-weight: 600;
-    letter-spacing: .05em; }
+    letter-spacing: .05em;
+    margin-bottom: -0.6em;
+    margin-top: 0; }
   .more-info p {
-    color: #14133f;
-    font-style: italic; }
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: .04em; }
   .more-info .genericon {
-    font-size: 1.5em;
+    font-size: 1.2em;
     vertical-align: top;
     text-align: center;
     -moz-transition: color .1s ease-in 0;
@@ -968,6 +973,9 @@ h3 {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     speak: none; }
+  .more-info hr {
+    margin-bottom: 1em;
+    height: .1em; }
 
 .store {
   text-align: center; }

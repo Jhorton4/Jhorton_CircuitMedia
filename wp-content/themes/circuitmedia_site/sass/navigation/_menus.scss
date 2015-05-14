@@ -50,7 +50,7 @@ ul li:hover {
 
 ul li:hover ul {
   display: block;
-  background: #D1D1D1;
+  background: #blue;
   color: #14133F;
 }
 
@@ -69,14 +69,13 @@ ul li a {
   cursor: pointer;
   font: 16px/18px sans-serif;
   color: white;
-  text-decoration: none;
   letter-spacing: .75px;
   font-weight: 300;
 }
 
 ul li a:hover {
-  background: #D1D1D1;
-  color: #14133F;
+  background: #2C5DAA;
+  color: white;
 }
 
 ul li ul {
@@ -90,7 +89,8 @@ ul li ul {
 }
 
 ul li ul a { 
-  background: #D1D1D1; 
+  background: #D1D1D1;
+  color: #blue;
   display: block;
 }
 
@@ -99,6 +99,7 @@ ul li:hover ul {
   opacity: 1;
   visibility: visible;
 }
+
 
 	.current_page_item > a,
 	.current-menu-item > a,

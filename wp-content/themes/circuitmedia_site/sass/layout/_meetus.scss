@@ -28,7 +28,6 @@ h3 {
 }
 
 .more-info{ 
-  padding-top: 9.2em;
   background: red;
   display: none;
   width: 100%;
@@ -39,16 +38,19 @@ h3 {
       z-index: 98;
       font-weight: 600;
       letter-spacing: .05em;
-
+      margin-bottom: -0.6em;
+      margin-top: 0;
     }
 
     p { 
-      color: $blue;
+      color: white;
       font-style: italic;
+      font-weight: 200;
+      letter-spacing: .04em;
     }
 
     .genericon {
-      font-size: 1.5em;
+      font-size: 1.2em;
       vertical-align: top;
       text-align: center;
       -moz-transition: color .1s ease-in 0;
@@ -65,5 +67,12 @@ h3 {
       -webkit-font-smoothing: antialiased;
       speak: none;
     } 
+
+    hr {
+      margin-bottom: 1em;
+      height: .1em;
+    }
+
 }
+
 
