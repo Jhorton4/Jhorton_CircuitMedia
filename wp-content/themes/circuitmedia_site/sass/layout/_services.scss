@@ -1,0 +1,62 @@
+  
+.skill-title {
+  width: 85%;
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+  font-weight: 400;
+
+  	h2 {
+  		font-weight: 700;
+  		letter-spacing: .03em;
+  		font-size: 1.5em;
+  	}
+
+	hr {
+		background-color: #ccc;
+		border: 0;
+		height: .2em;
+		margin-bottom: 2em;
+		width: 5em;
+		margin-top: -.7em;
+	  }
+
+  }
+
+ .service-descriptions {
+
+ 	h1 {
+  		font-size: 1.25em;
+  		font-weight: 400;
+  		text-align: center;
+  	}
+
+  	hr {
+		background-color: #ccc;
+		border: 0;
+		height: .125em;
+		margin-bottom: 1em;
+		width: 100%;
+		margin-top: -.7em;  	
+  	}
+
+  	.description-left {
+  		float: left;
+  		display: inline-block;
+  		width: 30%;
+  		margin-right: 3.3em;
+  	}
+
+  	.description-middle {
+  	  	display: inline-block;
+  		width: 30%;
+
+  	}
+
+  	.description-right {
+  		float: right;
+  		display: inline-block;
+  		width: 30%;
+  	}
+  }
