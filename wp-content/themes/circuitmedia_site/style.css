@@ -893,6 +893,10 @@ object {
   display: inline-block;
   margin-left: 1em;
   margin-bottom: 1.4em; }
+.social-navigation a {
+  color: #2C5DAA; }
+.social-navigation a:hover {
+  color: #D1D1D1; }
 
 .copyright {
   background: black;
@@ -928,6 +932,9 @@ object {
 h3 {
   font-size: 35px; }
 
+.overlay:hover {
+  background-color: black; }
+
 .column:hover .more-info {
   display: block;
   background-color: rgba(44, 93, 170, 0.7);
@@ -950,7 +957,8 @@ h3 {
     font-weight: 600;
     letter-spacing: .05em;
     margin-bottom: -0.6em;
-    margin-top: 0; }
+    margin-top: 0;
+    padding-top: 7em; }
   .more-info p {
     color: white;
     font-style: italic;
@@ -975,7 +983,8 @@ h3 {
     speak: none; }
   .more-info hr {
     margin-bottom: 1em;
-    height: .1em; }
+    height: .1em;
+    background-color: white; }
 
 .store {
   text-align: center; }

@@ -23,11 +23,19 @@
 }
 
 .social-navigation {
-	li{
+	li {
 	float: right;
 	display: inline-block;
 	margin-left: 1em;
 	margin-bottom: 1.4em;
+	}
+
+	a {
+		color: #2C5DAA;
+	}
+
+	a:hover {
+		color: #D1D1D1;
 	}
 }
 

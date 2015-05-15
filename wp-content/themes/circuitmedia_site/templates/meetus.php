@@ -28,28 +28,27 @@ get_header(); ?>
     while ( $loop->have_posts() ) : $loop->the_post();
 ?>
 
-    <div class="column">
-        <div class="overlay">
-          <div class="feature-image-overlay" style= "background-image: url('<?php the_field('person_headshot'); ?>');" >
-            <div class="more-info">
-              <h2><?php the_title(); ?></h2>
-               <p><?php the_field('person_title'); ?></p>
-                <hr>
-                <a href= "mailto:<?php the_field('person_email_link'); ?>"><span class="genericon genericon-mail"></span></span></a>
-                <a href="<?php the_field('person_linkedin_link'); ?>"><span class="genericon genericon-linkedin-alt"></span></a>
+        <div class="column">
+            <div class="overlay">
+                <div class="feature-image-overlay" style= "background-image: url('<?php the_field('person_headshot'); ?>');">
+                    <div class="more-info">
+
+                        <h2><?php the_title(); ?></h2>
+                         <p><?php the_field('person_title'); ?></p>
+                          <hr>
+                          <a href= "mailto:<?php the_field('person_email_link'); ?>"><span class="genericon genericon-mail"></span></span></a>
+                          <a href="<?php the_field('person_linkedin_link'); ?>"><span class="genericon genericon-linkedin-alt"></span></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-    </div>
 
-
-<?php
-    // Resets the Loop
-    endwhile;
-    wp_reset_postdata();
-?>
- </div>
-<?php get_footer(); ?>
+          <?php
+              // Resets the Loop
+              endwhile;
+              wp_reset_postdata(); ?>
+</div>
+          <?php get_footer(); ?>
 
 
 
