@@ -30,7 +30,8 @@ get_header(); ?>
     </div>
 
             <div class="article-description">
-              <h2><?php the_title(); ?></h2>
+              <h2><?php the_field('article_title'); ?></h2>
+              <hr>
               <p><?php the_field('article_short_description'); ?></p>
             </div> 
 

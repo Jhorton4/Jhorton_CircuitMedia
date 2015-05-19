@@ -13,4 +13,20 @@
   	text-align: left;
   	width: 22em;
   	display: block;	
+
+    h2 {
+      font-weight: 700;
+      letter-spacing: .03em;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    hr {
+    background-color: #ccc;
+    border: 0;
+    height: .2em;
+    margin-bottom: 2em;
+    width: 5em;
+    margin-top: -.98em;
+    }
   }

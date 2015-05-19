@@ -31,7 +31,8 @@ get_header(); ?>
 </div>      
 
     <div class="product-description">
-      <h2><?php the_title(); ?></h2>
+      <h2><?php the_field('product_title'); ?></h2>
+      <hr>
       <p><?php the_field('product_description'); ?></p>
     </div>
 
