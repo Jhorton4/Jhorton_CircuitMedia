@@ -1146,4 +1146,28 @@ h3 {
   width: 40em;
   margin: 2em auto; }
 
+.title {
+  width: 85%;
+  max-width: 1100px;
+  padding-top: 4em;
+  text-align: center;
+  margin: 0 auto;
+  display: table; }
+
+.store {
+  text-align: center; }
+
+.cart {
+  float: none !important;
+  display: block !important;
+  width: 100px  !important;
+  margin: auto !important; }
+  .cart .quantity {
+    align: center;
+    margin: auto;
+    display: block; }
+
+.meta_date {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */
