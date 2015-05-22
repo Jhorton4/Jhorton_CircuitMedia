@@ -484,21 +484,31 @@ a {
     letter-spacing: .75px;
     font-weight: 300; }
   .main-navigation nav a:hover {
-    background: #D1D1D1;
+    -webkit-transition: background-color 0.8s ease;
+            transition: background-color 0.8s ease;
+    background-color: #D1D1D1;
     color: #14133F; }
   .main-navigation nav ul li a:hover {
-    background: #D1D1D1;
+    -webkit-transition: background-color 0.8s ease;
+            transition: background-color 0.8s ease;
+    background-color: #D1D1D1;
     color: #14133F; }
   .main-navigation ul li:hover {
-    background: #D1D1D1;
+    -webkit-transition: background-color 0.8s ease;
+            transition: background-color 0.8s ease;
+    background-color: #D1D1D1;
     color: #14133F; }
   .main-navigation ul li:hover ul {
+    -webkit-transition: background-color 0.8s ease;
+            transition: background-color 0.8s ease;
     display: block;
-    background: #blue;
+    background-color: #blue;
     color: #14133F; }
   .main-navigation ul li:hover li {
+    -webkit-transition: background-color 0.8s ease;
+            transition: background-color 0.8s ease;
+    background-color: #D1D1D1;
     display: block;
-    background: #D1D1D1;
     color: #14133F; }
   .main-navigation ul li a {
     display: inline-block;
@@ -512,7 +522,9 @@ a {
     letter-spacing: .75px;
     font-weight: 300; }
   .main-navigation ul li a:hover {
-    background: #2C5DAA;
+    -webkit-transition: background-color 0.8s ease;
+            transition: background-color 0.8s ease;
+    background-color: #2C5DAA;
     color: white; }
   .main-navigation ul li ul {
     padding: 0;
@@ -523,7 +535,9 @@ a {
     visibility: hidden;
     font-weight: 300; }
   .main-navigation ul li ul a {
-    background: #D1D1D1;
+    -webkit-transition: background-color 0.8s ease;
+            transition: background-color 0.8s ease;
+    background-color: #D1D1D1;
     color: #blue;
     display: block; }
   .main-navigation ul li:hover ul {

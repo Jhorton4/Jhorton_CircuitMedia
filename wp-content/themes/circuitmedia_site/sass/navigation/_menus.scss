@@ -33,30 +33,35 @@ nav a {
 
 
 nav a:hover {
-  background: #D1D1D1;
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
   color: #14133F;
 }
 
 
 nav ul li a:hover {
-  background: #D1D1D1;
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
   color: #14133F;
 }
 
 ul li:hover {
-  background: #D1D1D1;
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
   color: #14133F;
 }
 
 ul li:hover ul {
+  transition: background-color 0.8s ease;
   display: block;
-  background: #blue;
+  background-color: #blue;
   color: #14133F;
 }
 
 ul li:hover li {
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
   display: block;
-  background: #D1D1D1;
   color: #14133F;
 }
 
@@ -74,7 +79,8 @@ ul li a {
 }
 
 ul li a:hover {
-  background: #2C5DAA;
+  transition: background-color 0.8s ease;
+  background-color: #2C5DAA;
   color: white;
 }
 
@@ -89,7 +95,8 @@ ul li ul {
 }
 
 ul li ul a { 
-  background: #D1D1D1;
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
   color: #blue;
   display: block;
 }
