@@ -1,23 +1,32 @@
 <?php
-
+/**
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
+ * @package circuitmedia-site
+ */
 
 get_header(); ?>
 
-<div class="title">
-    <div class="description row">
-        <h3><?php the_field('product_headline'); ?></h3>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		<div class="title">
+  		  <h3>STORE</h3>
         <hr/>
-    </div>
 </div>
 
-			<div class="row">
-			 <div class="store">
-					<?php woocommerce_content(); ?>
-			 </div>
-			</div>	
+	<div class="row clearfix">
+		<div class="woocommerce">
+			<?php woocommerce_content(); ?>
+	    </div>
+	</div>
 
-
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_footer(); ?>
-
-

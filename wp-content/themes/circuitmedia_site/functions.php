@@ -159,24 +159,14 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
-    add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
 function wcs_woo_remove_reviews_tab($tabs) {
- unset($tabs['reviews']);
- return $tabs;
+unset($tabs['reviews']);
+return $tabs;
 }
 
-add_filter( 'woocommerce_currencies', 'add_my_currency' );
- 
-function add_my_currency( $currencies ) {
-     $currencies['USD'] = __( 'US Dollars', 'woocommerce' );
-     return $currencies;
+if ( is_page('special-page') ) {
+     /** Remove default sidebar */
+     remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 }
- 
-add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
- 
-function add_my_currency_symbol( $currency_symbol, $currency ) {
-     switch( $currency ) {
-          case 'USD': $currency_symbol = '$'; break;
-     }
-     return $currency_symbol;
-}
+
