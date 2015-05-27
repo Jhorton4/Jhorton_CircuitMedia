@@ -1,0 +1,17 @@
+.site-header {
+	background: $blue;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+
+.site-branding {
+	img { 
+	float: left;
+	width: 23em;
+	padding: 1.2em;
+	margin-top: -.15em;
+	}
+}

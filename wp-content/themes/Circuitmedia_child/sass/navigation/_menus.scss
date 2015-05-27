@@ -1,0 +1,152 @@
+.main-navigation {
+	float: right;
+
+	ul {
+		text-align: left;
+  		float: left;
+  		bottom:0;
+  		left:0;
+  		padding: 0;
+  		margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  left: 0;
+}
+
+nav a {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  left: 0;
+  padding: 24px 17px;
+  cursor: pointer;
+  font: 16px/18px sans-serif;
+  color: white;
+  text-decoration: none;
+  letter-spacing: .75px;
+  font-weight: 300;
+}
+
+
+nav a:hover {
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
+  color: #14133F;
+}
+
+
+nav ul li a:hover {
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
+  color: #14133F;
+}
+
+ul li:hover {
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
+  color: #14133F;
+}
+
+ul li:hover ul {
+  transition: background-color 0.8s ease;
+  display: block;
+  background-color: #blue;
+  color: #14133F;
+}
+
+ul li:hover li {
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
+  display: block;
+  color: #14133F;
+}
+
+ul li a {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  left: 0;
+  padding: 27px 17px;
+  cursor: pointer;
+  font: 16px/18px sans-serif;
+  color: white;
+  letter-spacing: .75px;
+  font-weight: 300;
+}
+
+ul li a:hover {
+  transition: background-color 0.8s ease;
+  background-color: #2C5DAA;
+  color: white;
+}
+
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  width: 122px;
+  visibility: hidden;
+  font-weight: 300;
+}
+
+ul li ul a { 
+  transition: background-color 0.8s ease;
+  background-color: #D1D1D1;
+  color: #blue;
+  display: block;
+}
+
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	& .nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	& .nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

@@ -1,0 +1,88 @@
+.hero {
+	text-align: center;
+	height: 400px;
+	margin-top: 4.5em;
+	@include background-image(scroll);
+
+	.content-wrap {
+		@include vertical-align;
+
+		.hero .content-wrap{
+			position: relative;
+			
+		}
+	}
+
+	h1, p {
+	}
+
+	h1 {
+		color: white;
+		text-shadow: 0 0 10px #444;
+		font-size: 2.5em;
+	}
+
+	p { 
+		margin-top: 0;
+	}
+}
+
+
+.middle {
+	height: 35em;
+	width: 31em;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	margin-left: 5em;
+	background-size: cover !important;
+  	background-position: center !important;
+  	background-repeat: no-repeat !important;
+  	background-attachment: scroll !important;
+  	float: left;
+	@include clearfix;
+}
+
+.short-description {
+	margin-top: 5em;
+	margin-bottom: 5em;
+	margin-right: 5em;
+	float: right;
+	text-align: left;
+	width: 22em;
+	display: block;
+	box-sizing: none;
+
+	h2 {
+		font-weight: 700;
+  		letter-spacing: .03em;
+  		font-size: 1.5em;
+  		text-align: center;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+}
+
+.hero-bottom {
+	text-align: center;
+	height: 400px;
+	@include background-image(scroll);
+
+	h1 {
+		color: white;
+		text-shadow: 0 0 10px #444;
+		font-size: 2.5em;
+	}
+
+	.content-wrap {
+		@include vertical-align;
+
+		.hero .content-wrap{
+			position: relative;
+			
+		}
+	}
+}
+
