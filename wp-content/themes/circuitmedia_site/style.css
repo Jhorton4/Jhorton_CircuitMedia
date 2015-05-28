@@ -1154,6 +1154,29 @@ h3 {
 
 .woocommerce {
   text-align: center; }
+  .woocommerce div.product p {
+    text-align: left; }
+  .woocommerce div.product .product_meta {
+    visibility: hidden; }
+  .woocommerce div.product p.price {
+    text-align: center;
+    color: #ccc;
+    margin: 0;
+    padding: 0; }
+  .woocommerce div.product .product_title {
+    padding-top: .5em;
+    margin-bottom: .35em;
+    text-transform: uppercase; }
+    .woocommerce div.product .product_title hr {
+      background-color: #ccc;
+      border: 0;
+      height: .2em;
+      margin-bottom: 2em;
+      width: 5em;
+      margin-top: -.98em; }
+  .woocommerce div.product form.cart {
+    text-align: center !important;
+    display: inline-block; }
   .woocommerce ul.products {
     margin-top: 4em;
     width: 100%; }

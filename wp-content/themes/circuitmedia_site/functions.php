@@ -169,4 +169,3 @@ if ( is_page('special-page') ) {
      /** Remove default sidebar */
      remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 }
-

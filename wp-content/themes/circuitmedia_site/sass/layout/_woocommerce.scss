@@ -1,7 +1,46 @@
 .woocommerce {
-
 	text-align: center;
 
+
+div.product{
+
+		p {
+			text-align: left;
+		}
+
+		.product_meta {
+			visibility: hidden;
+		}
+
+		p.price {
+			text-align: center;
+			color: #ccc;
+			margin: 0;
+			padding: 0;
+		}
+
+		.product_title {
+			padding-top: .5em;
+			margin-bottom: .35em;
+			text-transform: uppercase;
+
+			hr {
+				background-color: #ccc;
+				border: 0;
+				height: .2em;
+				margin-bottom: 2em;
+				width: 5em;
+				margin-top: -.98em;
+			}
+		}
+
+
+		form.cart {
+			text-align: center !important;
+			display: inline-block;
+		}
+
+}
 
 ul.products {
 	margin-top: 4em;

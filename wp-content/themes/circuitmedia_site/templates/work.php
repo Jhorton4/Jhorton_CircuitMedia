@@ -7,11 +7,9 @@ get_header(); ?>
 
 <div class="title">
     <div class="description row">
-        <h3><?php the_field('team_headline_1'); ?></h3>
+        <h3><?php the_field('work_headline'); ?></h3>
         <hr>
-        <p><?php the_field('team_description'); ?></p>
-        <h3><?php the_field('team_headline_2'); ?></h3>
-        <hr>
+        <p><?php the_field('work_description'); ?></p>
     </div>
 </div>
 
