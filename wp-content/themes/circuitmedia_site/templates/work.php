@@ -13,29 +13,26 @@ get_header(); ?>
     </div>
 </div>
 
-<div class="gallery">
+<div class="gallery-half">
 
 <?php
     // The Arguments
     $args = array(
-        'post_type' => 'people',  // Name of Your Custom Post Type
-        'posts_per_page' => 12       // Number of Posts to Retrieve
+        'post_type' => 'category',  // Name of Your Custom Post Type
+        'posts_per_page' => 4       // Number of Posts to Retrieve
     );
     // Start Loop
     $loop = new WP_Query( $args );
     while ( $loop->have_posts() ) : $loop->the_post();
 ?>
 
-        <div class="column">
+        <div class="column half">
             <div class="overlay">
-                <div class="feature-image-overlay" style= "background-image: url('<?php the_field('person_headshot'); ?>');">
+                <div class="feature-image-overlay" style= "background-image: url('<?php the_field('category_image'); ?>');">
                     <div class="more-info">
 
-                        <h2><?php the_title(); ?></h2>
-                         <p><?php the_field('person_title'); ?></p>
-                          <hr>
-                          <a href= "mailto:<?php the_field('person_email_link'); ?>" target="_blank"><span class="genericon genericon-mail"></span></a>
-                          <a href="<?php the_field('person_linkedin_link'); ?>" target="_blank"><span class="genericon genericon-linkedin-alt"></span></a>
+                        <h2><?php the_field('category_icon'); ?></h2>
+                         <p><?php the_field('category_name'); ?></p>
                     </div>
                 </div>
             </div>

@@ -23,6 +23,7 @@ $grid-gutter: 2%;
 
 &.half {
 	width: (100% - ($grid-gutter * 1)) / 2;
+	margin-right: 0;
 	}
 
 &.third {
