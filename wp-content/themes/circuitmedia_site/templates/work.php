@@ -28,13 +28,15 @@ get_header(); ?>
 
         <div class="column half">
             <div class="overlay">
-                <div class="feature-image-overlay" style= "background-image: url('<?php the_field('category_image'); ?>');">
+                <a href="<?php the_field('category_link'); ?>"><span class="feature-image-overlay" style= "background-image: url('<?php the_field('category_image'); ?>'); ">
+
                     <div class="more-info">
 
                         <h2><?php the_field('category_icon'); ?></h2>
                          <p><?php the_field('category_name'); ?></p>
+                         
                     </div>
-                </div>
+                </span></a>
             </div>
         </div>
 

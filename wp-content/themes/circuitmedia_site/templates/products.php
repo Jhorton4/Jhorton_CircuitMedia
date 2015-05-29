@@ -27,7 +27,7 @@ get_header(); ?>
 
 
 <div class="products">
-    <div class="feature-image-overlay" style= "background-image: url('<?php the_field('product_feature_image'); ?>');" ></div>
+    <a href="<?php the_field('product_link'); ?>"><span class="feature-image-overlay" style= "background-image: url('<?php the_field('product_feature_image'); ?>'); "></span></a>
 </div>      
 
     <div class="product-description">

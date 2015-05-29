@@ -26,7 +26,7 @@ get_header(); ?>
 
 
     <div class="single-image">
-        <div class="feature-image-overlay" style= "background-image: url('<?php the_field('article_feature_image'); ?>');" ></div>
+        <a href="<?php the_field('article_link'); ?>"><span class="feature-image-overlay" style= "background-image: url('<?php the_field('article_feature_image'); ?>'); "></span></a>
     </div>
 
             <div class="article-description">
@@ -42,6 +42,5 @@ get_header(); ?>
 ?>
  </div>
 <?php get_footer(); ?>
-
 
 

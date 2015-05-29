@@ -7,9 +7,9 @@ get_header(); ?>
 
 <div class="title">
     <div class="description row">
-        <h3><?php the_field('work_headline'); ?></h3>
+        <h3><?php the_field('communications_headline'); ?></h3>
         <hr>
-        <p><?php the_field('work_description'); ?></p>
+        <p><?php the_field('communications_description'); ?></p>
     </div>
 </div>
 
@@ -32,10 +32,7 @@ get_header(); ?>
                     <div class="more-info">
 
                         <h2><?php the_title(); ?></h2>
-                         <p><?php the_field('person_title'); ?></p>
-                          <hr>
-                          <a href= "mailto:<?php the_field('person_email_link'); ?>" target="_blank"><span class="genericon genericon-mail"></span></a>
-                          <a href="<?php the_field('person_linkedin_link'); ?>" target="_blank"><span class="genericon genericon-linkedin-alt"></span></a>
+                        
                     </div>
                 </div>
             </div>
