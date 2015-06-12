@@ -956,7 +956,7 @@ h3 {
 .overlay:hover {
   background-color: black; }
 
-.column:hover .more-info {
+.column:hover .more-info-us {
   display: block;
   background-color: rgba(44, 93, 170, 0.7);
   cursor: pointer;
@@ -967,12 +967,12 @@ h3 {
   height: 100%;
   width: 100%; }
 
-.more-info {
+.more-info-us {
   background: red;
   display: none;
   width: 100%;
   height: 100%; }
-  .more-info h2 {
+  .more-info-us h2 {
     color: white;
     z-index: 98;
     font-weight: 600;
@@ -980,13 +980,13 @@ h3 {
     margin-bottom: -0.6em;
     margin-top: 0;
     padding-top: 7em; }
-  .more-info p {
+  .more-info-us p {
     color: white;
     font-style: italic;
     font-weight: 200;
     letter-spacing: .04em;
     margin-bottom: 1.5em; }
-  .more-info .genericon {
+  .more-info-us .genericon {
     font-size: 1.2em;
     vertical-align: top;
     text-align: center;
@@ -1003,7 +1003,7 @@ h3 {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     speak: none; }
-  .more-info hr {
+  .more-info-us hr {
     margin-bottom: 1em;
     height: .1em;
     background-color: white; }

@@ -31,7 +31,7 @@ get_header(); ?>
         <div class="column">
             <div class="overlay">
                 <div class="feature-image-overlay" style= "background-image: url('<?php the_field('person_headshot'); ?>');">
-                    <div class="more-info">
+                    <div class="more-info-us">
 
                         <h2><?php the_title(); ?></h2>
                          <p><?php the_field('person_title'); ?></p>
