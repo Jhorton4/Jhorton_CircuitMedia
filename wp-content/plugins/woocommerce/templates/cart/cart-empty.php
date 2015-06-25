@@ -15,11 +15,6 @@ wc_print_notices();
 
 ?>
 
-<div class="title">
-  		  <h3>CART</h3>
-        <hr/>
-</div>
-
 <p class="cart-empty"><?php _e( 'Your cart is currently empty.', 'woocommerce' ) ?></p>
 
 <?php do_action( 'woocommerce_cart_is_empty' ); ?>

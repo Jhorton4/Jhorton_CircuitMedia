@@ -18,7 +18,7 @@ get_header(); ?>
 <?php
     // The Arguments
     $args = array(
-        'post_type' => 'people',  // Name of Your Custom Post Type
+        'post_type' => 'event',  // Name of Your Custom Post Type
         'posts_per_page' => 8       // Number of Posts to Retrieve
     );
     // Start Loop
@@ -28,10 +28,10 @@ get_header(); ?>
 
         <div class="column">
             <div class="overlay">
-                <div class="feature-image-overlay" style= "background-image: url('<?php the_field('person_headshot'); ?>');">
+                <div class="feature-image-overlay" style= "background-image: url('<?php the_field('event_image'); ?>');">
                     <div class="more-info">
 
-                        <h2><?php the_title(); ?></h2>
+                        <h2><?php the_field('event_title'); ?></h2>
                          
                     </div>
                 </div>
