@@ -28,13 +28,14 @@ get_header(); ?>
 
         <div class="column">
             <div class="overlay">
-                <div class="feature-image-overlay" style= "background-image: url('<?php the_field('communication_image'); ?>');">
+
+              <a href="<?php the_field('communication_link'); ?>"><span class="feature-image-overlay" style= "background-image: url('<?php the_field('communication_image'); ?>'); ">
                     <div class="more-info">
 
                         <h2><?php the_field('communication_title'); ?></h2>
                         
                     </div>
-                </div>
+                 </span></a>
             </div>
         </div>
 
