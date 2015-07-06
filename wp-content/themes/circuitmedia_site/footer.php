@@ -29,7 +29,7 @@
 	<div class="row">
 
 	  	<div class="bottom-logo">
-		 	<img src="<?php bloginfo('template_directory'); ?>/images/circuitmedia2.png" alt="" />
+		 	<img src="<?php bloginfo('template_directory'); ?>/images/circuitmediagreen02.png" alt="" />
 	  	</div>
 
 	  	<div class="say-hi">

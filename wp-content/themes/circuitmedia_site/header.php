@@ -22,8 +22,8 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="row">
-			<div class="site-branding">
-			<a href="<?php echo get_option('home'); ?>"/><img src="<?php bloginfo('template_directory'); ?>/images/circuitmedia.png" alt="" /></a>
+	<div class="site-branding">
+			<a href="<?php echo get_option('home'); ?>"/><img src="<?php bloginfo('template_directory'); ?>/images/circuitmediagreen01.png" alt="" /></a>
 
 			</div><!-- .site-branding -->
 

@@ -87,6 +87,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/circuitmediagreen01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14620,
+		"inputAbbreviatedPath": "\/images\/circuitmediagreen01.png",
+		"outputAbbreviatedPath": "\/images\/circuitmediagreen01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/circuitmediagreen02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8539,
+		"inputAbbreviatedPath": "\/images\/circuitmediagreen02.png",
+		"outputAbbreviatedPath": "\/images\/circuitmediagreen02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/inc\/custom-header.php": {
 		"fileType": 8192,
 		"ignore": 0,

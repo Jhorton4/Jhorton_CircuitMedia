@@ -896,12 +896,12 @@ object {
 
 .bottom-logo img {
   float: left;
-  margin-top: 1.3em;
-  width: 32em; }
+  margin-top: 1.6em;
+  width: 20em; }
 
 .say-hi {
   float: left;
-  margin-left: 21.7em;
+  margin-left: 34.5em;
   margin-top: 1.4em;
   color: white; }
 
@@ -1085,7 +1085,7 @@ h3 {
   font-size: 4em;
   font-weight: 600;
   text-align: center;
-  color: #ccc;
+  color: #D1D1D1;
   margin: 0; }
 .skill-headline .number-left {
   float: left;
@@ -1207,7 +1207,7 @@ p {
     visibility: hidden; }
   .woocommerce div.product p.price {
     text-align: center;
-    color: #ccc;
+    color: #AEBA7F;
     margin: 0;
     padding: 0; }
   .woocommerce div.product .product_title {
@@ -1215,7 +1215,7 @@ p {
     margin-bottom: .35em;
     text-transform: uppercase; }
     .woocommerce div.product .product_title hr {
-      background-color: #ccc;
+      background-color: #AEBA7F;
       border: 0;
       height: .2em;
       margin-bottom: 2em;
