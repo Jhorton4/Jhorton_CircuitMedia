@@ -6,7 +6,7 @@
   		float: left;
   		bottom:0;
   		left:0;
-  		padding: 0;
+  		padding: .04em;
   		margin: 0;
 }
 
@@ -34,20 +34,20 @@ nav a {
 
 nav a:hover {
   transition: background-color 0.8s ease;
-  background-color: #D1D1D1;
+  background-color: #C1C1C1;
   color: #14133F;
 }
 
 
 nav ul li a:hover {
   transition: background-color 0.8s ease;
-  background-color: #D1D1D1;
+  background-color: #C1C1C1;
   color: #14133F;
 }
 
 ul li:hover {
   transition: background-color 0.8s ease;
-  background-color: #D1D1D1;
+  background-color: #C1C1C1;
   color: #14133F;
 }
 
@@ -60,7 +60,7 @@ ul li:hover ul {
 
 ul li:hover li {
   transition: background-color 0.8s ease;
-  background-color: #D1D1D1;
+  background-color: #C1C1C1;
   display: block;
   color: #14133F;
 }
@@ -75,7 +75,7 @@ ul li a {
   font: 16px/18px sans-serif;
   color: white;
   letter-spacing: .75px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 ul li a:hover {
@@ -85,7 +85,7 @@ ul li a:hover {
 }
 
 ul li ul {
-  padding: 0;
+  padding: .04em;
   position: absolute;
   top: 72px;
   left: 0;
@@ -96,7 +96,7 @@ ul li ul {
 
 ul li ul a { 
   transition: background-color 0.8s ease;
-  background-color: #D1D1D1;
+  background-color: #C1C1C1;
   color: #blue;
   display: block;
 }

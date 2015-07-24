@@ -50,7 +50,7 @@ h3 {
     p { 
       color: white;
       font-style: italic;
-      font-weight: 200;
+      font-weight: 300;
       letter-spacing: .04em;
       margin-bottom: 1.5em;
     }
@@ -72,11 +72,12 @@ h3 {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       speak: none;
+      padding-bottom: .814em;
     } 
 
     hr {
       margin-bottom: 1em;
-      height: .1em;
+      height: .11em;
       background-color: white;
     }
 

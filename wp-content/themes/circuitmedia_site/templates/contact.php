@@ -12,10 +12,6 @@ get_header(); ?>
     </div>
 </div>
 
- <div class="form">
-      <?php echo do_shortcode('[contact-form to='info@circuitmedia.com' subject='Hello, lets chat!'][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Website' type='url'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]'); ?>
-      </div>
-
   <div class="row clearfix">
         <!-- Google Map Embed -->
       <div class="map">
@@ -26,7 +22,7 @@ get_header(); ?>
           <p><?php the_field('contact_directions'); ?></p>
       </div>
 
-    </div>
+  </div>
 
 
 <?php get_footer(); ?>

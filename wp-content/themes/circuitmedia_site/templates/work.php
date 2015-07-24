@@ -19,14 +19,14 @@ get_header(); ?>
     // The Arguments
     $args = array(
         'post_type' => 'category',  // Name of Your Custom Post Type
-        'posts_per_page' => 4       // Number of Posts to Retrieve
+        'posts_per_page' => 3       // Number of Posts to Retrieve
     );
     // Start Loop
     $loop = new WP_Query( $args );
     while ( $loop->have_posts() ) : $loop->the_post();
 ?>
 
-        <div class="column half">
+        <div class="column third">
             <div class="overlay">
                 <a href="<?php the_field('category_link'); ?>"><span class="feature-image-overlay" style= "background-image: url('<?php the_field('category_image'); ?>'); ">
 
