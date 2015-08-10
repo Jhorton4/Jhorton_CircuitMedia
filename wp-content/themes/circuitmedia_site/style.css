@@ -891,8 +891,11 @@ object {
 
 .site-footer {
   background: #14133f;
-  position: relative;
-  bottom: 0; }
+  position: fixed;
+  bottom: 0px;
+  margin: 0px;
+  width: 100%;
+  z-index: 9000; }
 
 .bottom-logo img {
   float: left;
@@ -958,7 +961,7 @@ h3 {
   background-color: black; }
 
 .column:hover .more-info-us {
-  display: block;
+  display: table;
   background-color: rgba(44, 93, 170, 0.7);
   cursor: pointer;
   -webkit-transition: background-color 2s ease-out;
@@ -1171,7 +1174,7 @@ p {
   .gallery-half .overlay:hover {
     background-color: black; }
   .gallery-half .column:hover .more-info {
-    display: block;
+    display: table;
     background-color: rgba(44, 93, 170, 0.7);
     cursor: pointer;
     -webkit-transition: background-color 2s ease-out;
@@ -1255,7 +1258,7 @@ p {
   .gallery .overlay:hover {
     background-color: black; }
   .gallery .column:hover .more-info {
-    display: block;
+    display: table;
     background-color: rgba(44, 93, 170, 0.7);
     cursor: pointer;
     -webkit-transition: background-color 2s ease-out;
@@ -1308,7 +1311,7 @@ p {
   .gallery .overlay:hover {
     background-color: black; }
   .gallery .column:hover .more-info {
-    display: block;
+    display: table;
     background-color: rgba(44, 93, 170, 0.7);
     cursor: pointer;
     -webkit-transition: background-color 2s ease-out;
@@ -1361,60 +1364,7 @@ p {
   .gallery .overlay:hover {
     background-color: black; }
   .gallery .column:hover .more-info {
-    display: block;
-    background-color: rgba(44, 93, 170, 0.7);
-    cursor: pointer;
-    -webkit-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out; }
-  .gallery .overlay {
-    height: 100%;
-    width: 100%; }
-  .gallery .more-info {
-    background: red;
-    display: none;
-    width: 100%;
-    height: 100%; }
-    .gallery .more-info .fa {
-      font-size: 1.5em; }
-    .gallery .more-info h2 {
-      color: white;
-      z-index: 98;
-      font-weight: 600;
-      letter-spacing: .05em;
-      margin-bottom: 0.05em;
-      margin-top: 0;
-      padding-top: 4.45em;
-      font-size: 1.75em;
-      font-style: italic; }
-    .gallery .more-info p {
-      margin: 0;
-      font-size: 1.5em;
-      color: white;
-      font-style: italic;
-      font-weight: 200;
-      letter-spacing: .04em; }
-
-p {
-  margin-bottom: 2em; }
-
-.gallery {
-  width: 100%;
-  margin: 0 auto;
-  display: table; }
-  .gallery .title {
-    width: 85%;
-    max-width: 1100px;
-    padding-top: 4em;
-    text-align: center;
-    margin: 0 auto;
-    display: table; }
-  .gallery h3 {
-    font-size: 2.5em;
-    margin-bottom: .2em; }
-  .gallery .overlay:hover {
-    background-color: black; }
-  .gallery .column:hover .more-info {
-    display: block;
+    display: table;
     background-color: rgba(44, 93, 170, 0.7);
     cursor: pointer;
     -webkit-transition: background-color 2s ease-out;

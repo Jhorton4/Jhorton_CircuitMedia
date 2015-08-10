@@ -26,7 +26,7 @@ p {
 		}
 
 		.column:hover .more-info{ 
-		  display: block;
+		  display: table;
 		  background-color: rgba(44,93,170,.7);
 		  cursor: pointer;
 		  -webkit-transition: background-color 2s ease-out;
